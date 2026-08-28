@@ -2,6 +2,10 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import ButtonPrimary from '../components/ui/ButtonPrimary.vue';
+import Modal from '../components/Modal.vue';
+import ButtonDnger from '../components/ui/ButtonDnger.vue';
+
+const isOpen = ref(false);
 
 const projects = ref([
     {
@@ -22,7 +26,6 @@ const projects = ref([
         desc: "Application web"
     }
 ]);
-
 
 
 
@@ -144,9 +147,9 @@ const projects = ref([
 
                 <div class="mt-4">
                         
-                        <ButtonPrimary>
-                            Voir plus
-                        </ButtonPrimary>
+                    <ButtonPrimary @click="isOpen = true">
+                        Voir plus
+                    </ButtonPrimary>
                         
                 </div>
 
@@ -250,6 +253,15 @@ const projects = ref([
 
 
     </section>
+
+    <Modal v-if="isOpen">
+        <div class="flex justify-between items-center">
+            <h1>DETAIL PROJET</h1>
+            <ButtonDnger @click="isOpen = false">
+                Fermer
+            </ButtonDnger>
+        </div>
+    </Modal>
 
 </template>
 

@@ -1,18 +1,16 @@
-export const totoData = [
+export const totoData = ['']
+
+export const statusData = [
     {
-        title: "Ecommerce",
-        status: 'pending'
+        value: "pending",
+        title: "En attent"
     },
     {
-        title: "Learn vue js",
-        status: 'done'
+        value: "in_progress",
+        title: "En cours"
     },
     {
-        title: "Learn git and gihub",
-        status: 'pending'
-    },
-    {
-        title: "Learn SQL",
-        status: 'in_progress'
+        value: "done",
+        title: "Términer"
     }
 ]
