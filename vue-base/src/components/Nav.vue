@@ -5,10 +5,10 @@ import { RouterLink } from 'vue-router';
 
 <template>
 
-    <nav class="flex justify-between p-5 border-b-[#80808050] border-b-[.5px] font-stretch-semi-condensed">
+    <nav class="flex justify-between p-5 border-b-[#80808050] border-b-[.5px] font-stretch-semi-condensed sticky top-0 left-0 w-[100%] z-30 backdrop-blur-2xl bg-[#5e5b5b60]">
         
         <RouterLink to="/">
-            <h1 class="text-blue-600 font-bold" style="font-size: 1.7rem;">M-PortFolio</h1>
+            <h1 class="text-blue-600 font-bold" style="font-size: 1.7rem;">Vue-Js</h1>
         </RouterLink>
 
         <ul class="text-black flex gap-5 capitalize font-bold">
@@ -20,26 +20,8 @@ import { RouterLink } from 'vue-router';
             </li>
 
             <li>
-                <RouterLink to="/about">
-                    à propos
-                </RouterLink>
-            </li>
-
-            <li>
-                <RouterLink to="/skills">
-                    compétances
-                </RouterLink>
-            </li>
-
-            <li>
-                <RouterLink to="/projects">
-                    projets
-                </RouterLink>
-            </li>
-
-            <li>
-                <RouterLink to="/contact">
-                    contact
+                <RouterLink to="/product">
+                    produits
                 </RouterLink>
             </li>
 
@@ -52,6 +34,12 @@ import { RouterLink } from 'vue-router';
             <li>
                 <RouterLink to="/tache">
                     taches
+                </RouterLink>
+            </li>
+
+            <li>
+                <RouterLink to="/cart">
+                    🛒
                 </RouterLink>
             </li>
 

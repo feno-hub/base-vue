@@ -64,12 +64,13 @@ const onSubmit = () => {
     });
 }
 
+// const handleDleteTache = (id) => 
 
 </script>
 
 
 <template>
-    <div class="mt-5 bg-blue-50 p-8 rounded-2xl">
+    <div class="mt-5 bg-blue-50 p-8 rounded-2xl min-h-[82vh]">
         <div class="flex justify-between items-center w-[50%] m-auto">
             <h1>
                 Lite des tâches
@@ -83,14 +84,17 @@ const onSubmit = () => {
 
         <div class="grid grid-cols-3 gap-3 mt-5">
             <div v-for="todo in todos" class="bg-amber-200 p-3 rounded-[1rem]">
+                
                 <div class="my-5 mx-0">
                     <span class="bg-green-500 p-3 rounded-2xl">
                         {{ todo.status }}
                     </span>
                 </div>
+                
                 <p>
                     {{ todo.title }}
                 </p>
+
             </div>
         </div>
         

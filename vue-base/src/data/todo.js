@@ -1,4 +1,4 @@
-export const totoData = ['']
+export const totoData = [];
 
 export const statusData = [
     {
